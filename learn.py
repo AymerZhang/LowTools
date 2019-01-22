@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-""" 一笔画完工具 """  # 任何模块的第一个字符串会被当做是注释
+""" 一笔画完工具 """
 
-__author__ = 'Aymer Zhang'  # 模块作者 当公开代码的时候别人就会看到了作者的大名了
+__author__ = 'Aymer Zhang'
 import tkinter as tk
 import tkinter.messagebox as messagebox
 

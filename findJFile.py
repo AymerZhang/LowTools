@@ -5,13 +5,15 @@ __author__ = 'Aymer Zhang'
 
 import os
 
-dirpath = '/Users/zhangzhongwen/CodeStudio/AndroidStudioProjects/trunk/app'
+# 项目文件夹路径
+dirPath = 'project/projectName'
+keyEnd = '.java'
 if __name__ == '__main__':
     allLines = 0
 
-    for root, dirs, files in os.walk(dirpath, topdown=False):
+    for root, dirs, files in os.walk(dirPath, topdown=False):
         for filename in files:
-            if filename.endswith('.java'):
+            if filename.endswith(keyEnd):
                 allLines += len(open(os.path.join(root, filename)).readlines())
 
-    print('长度 %d' % allLines)
+    print('%s文件有 %d 行' % (keyEnd.strip('.'), allLines))

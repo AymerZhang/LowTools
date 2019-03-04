@@ -26,7 +26,7 @@ def send_move():
     # nickname = input('please input your firends\' nickname : ' )
     #   想给谁发信息，先查找到这个朋友,name后填微信备注即可,deepin测试成功
     # users = itchat.search_friends(name=nickname)
-    users = itchat.search_friends(name='周子鹏17310400594')  # 使用备注名来查找实际用户名
+    users = itchat.search_friends(name='nickName')  # 使用备注名来查找实际用户名
     # 获取好友全部信息,返回一个列表,列表内是一个字典
     print(users)
     # 获取`UserName`,用于发送消息
